@@ -25,7 +25,7 @@ class StockPortfolio {
         }
         else {
             this.currentPrice = newPrice;
-            if(highestPrice>newPrice){
+            if(highestPrice<newPrice){
                 highestPrice=newPrice;
             }
         }
@@ -40,6 +40,6 @@ class StockPortfolio {
     // TODO: Calculate current total value of holdings
     public double getCurrentValue() {
         // TODO
-        return (currentPrice)*quantity;
+        return currentPrice*quantity;
     }
 }
